@@ -1,10 +1,14 @@
 // Range beacons screen.
-;(function(app)
-{
 
 var found = false;
 var yourBeacon;
-var allBeacons=[];
+
+
+;(function(app)
+{
+
+
+
 
 
 
@@ -20,8 +24,6 @@ beaconFound = function(beacon,text){
 isBeaconLost = function(beacon,beaconInfo){
   
   lost = true;
-
-  window.alert(beaconInfo.beacons.length);
 
   for(var i=0;i < beaconInfo.beacons.length;i++){
 
@@ -54,12 +56,15 @@ isBeaconLost = function(beacon,beaconInfo){
 			beaconInfo.beacons.sort(function(beacon1, beacon2) {
 				return beacon1.distance > beacon2.distance; });
      
-      window.alert(beaconInfo.beacons.length);
-    	// if ((found) && (isBeaconLost(yourBeacon,beaconInfo))
-    	// {
-    	// 	window.alert('I lost you');
-    	// 	// found = false;
-    	// };   
+    	if (found)
+    	{
+
+    		if (isBeaconLost(yourBeacon,beaconInfo))
+    		{
+    		window.alert('I lost you');
+    		found = false;
+    		}
+    	}
 
 
 			// Generate HTML for beacons.
@@ -78,7 +83,7 @@ isBeaconLost = function(beacon,beaconInfo){
 
 			var colorClasses = app.beaconColorStyle(beacon.color);
 
-      beaconFound(beacon,"ole");
+      beaconFound(beacon,"I found you Beacon");
 
 
 			var htm = '<div class="' + colorClasses + '">'
