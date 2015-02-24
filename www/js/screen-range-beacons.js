@@ -1,4 +1,14 @@
 // Range beacons screen.
+var found = false;
+
+beaconFound = function(beacon,text){
+	if ((beacon.major ==33613) && (beacon.minor == 1285) && !found)
+	{	
+		window.alert(text);
+		found = true;
+	}
+};
+
 ;(function(app)
 {
 	app.startRangingBeacons = function()
@@ -22,17 +32,27 @@
 			beaconInfo.beacons.sort(function(beacon1, beacon2) {
 				return beacon1.distance > beacon2.distance; });
 
+			// our code!!!!!!
+
+
+
 			// Generate HTML for beacons.
 			$.each(beaconInfo.beacons, function(key, beacon)
 			{
 				var element = $(createBeaconHTML(beacon));
 				$('#id-screen-range-beacons .style-item-list').append(element);
+
+
 			});
 		};
 
 		function createBeaconHTML(beacon)
 		{
+
+	
 			var colorClasses = app.beaconColorStyle(beacon.color);
+      beaconFound(beacon,"ole");
+
 			var htm = '<div class="' + colorClasses + '">'
 				+ '<table><tr><td>Major</td><td>' + beacon.major
 				+ '</td></tr><tr><td>Minor</td><td>' + beacon.minor
