@@ -1,8 +1,11 @@
 // Define application object and common functions.
+var email;
+var	USER_NAME = 1;
 var app = (function()
 {
 	// Application object.
 	var app = {};
+
 
 	// Application data.
 	app.currentScreenId = null;
@@ -21,6 +24,48 @@ var app = (function()
 
 	// ------------- Private helper function ------------- //
 
+	function myToJson(text){
+
+		added = 1;
+		result="";
+
+		tmp = text.split(/[,:}{' ']/);
+
+		for(var i=0; i < tmp.length; i++){
+			if (tmp[i].length>0)
+			{
+				// window.alert(tmp[i]);
+				result+="'"+tmp[i]+"'";
+				if ((added % 2) == 1)
+				{
+					result+=": ";
+				} else
+				{
+						result+=',';
+				}
+				added+=1;
+			}
+		}		
+
+		result.slice(0,-1);
+
+		return '{'+result.slice(0,-1)+'}'
+
+	}
+
+		function myToArray(text){
+
+			result=[];
+			tmp = text.split(/[\s,:}{']/);
+			for(var i=0;i < tmp.length;i++){
+				if (tmp[i].length>0)
+				{
+					result.push(tmp[i]);
+				}
+			}
+			return result;
+		}
+
   function onDeviceReady() {
         var element = document.getElementById('deviceProperties');
         element.innerHTML = 'Device Model: '    + device.model    + '<br />' +
@@ -33,10 +78,12 @@ var app = (function()
         var deviceInfo = cordova.require("cordova/plugin/DeviceInformation");
 
 				deviceInfo.get(function(result) {        		
-        						// element.innerHTML += result;
+        						element.innerHTML += result;
         						
-        		    		 element.innerHTML += result;
-        		    		 console.log(result);
+        						// hlp = myToJson(result);
+        						phoneData = myToArray(result);
+   						      // window.alert(JSON.parse(hlp));
+   						      email = phoneData[USER_NAME];
 
     		});                            
    

@@ -15,7 +15,7 @@ var yourBeacon;
 beaconFound = function(beacon,text){
 	if ((beacon.major ==33613) && (beacon.minor == 1285) && !found)
 	{	
-		window.alert(text);
+		window.alert(text+"user:"+email);
 		found = true;
 		yourBeacon = beacon;
 	}
