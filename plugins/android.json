@@ -11,6 +11,14 @@
                         {
                             "xml": "<feature name=\"EstimoteBeacons\"><param name=\"android-package\" value=\"com.evothings.EstimoteBeacons\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Device\"><param name=\"android-package\" value=\"org.apache.cordova.device.Device\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"DeviceInformation\"><param name=\"android-package\" value=\"com.vliesaputra.cordova.plugins.DeviceInformation\" /></feature>",
+                            "count": 1
                         }
                     ]
                 }
@@ -24,6 +32,14 @@
                         },
                         {
                             "xml": "<uses-permission android:name=\"android.permission.BLUETOOTH_ADMIN\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.READ_PHONE_STATE\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.GET_ACCOUNTS\" />",
                             "count": 1
                         }
                     ],
@@ -39,6 +55,12 @@
     },
     "installed_plugins": {
         "pl.makingwaves.estimotebeacons": {
+            "PACKAGE_NAME": "com.evothings.beaconfinder"
+        },
+        "org.apache.cordova.device": {
+            "PACKAGE_NAME": "com.evothings.beaconfinder"
+        },
+        "com.vliesaputra.deviceinformation": {
             "PACKAGE_NAME": "com.evothings.beaconfinder"
         }
     },

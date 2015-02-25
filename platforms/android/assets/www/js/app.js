@@ -21,13 +21,30 @@ var app = (function()
 
 	// ------------- Private helper function ------------- //
 
-	function onDeviceReady()
-	{
-		// TODO: Add functionality if needed.
-		hyper.log('onDeviceReady')
-	}
+  function onDeviceReady() {
+        var element = document.getElementById('deviceProperties');
+        element.innerHTML = 'Device Model: '    + device.model    + '<br />' +
+                            'Device Cordova: '  + device.cordova  + '<br />' +
+                            'Device Platform: ' + device.platform + '<br />' +
+                            'Device UUID: '     + device.uuid     + '<br />' +
+                            'Device Version: '  + device.version  + '<br />';
+
+
+        var deviceInfo = cordova.require("cordova/plugin/DeviceInformation");
+				deviceInfo.get(function(result) {
+        						console.log("result = " + result);}, function() {
+        						console.log("error");
+    		});                            
+                   
+    }
+
 
 	// ------------- Application functions ------------- //
+
+	app.initialize = function()
+	{
+		window.alert("hello");
+	}
 
 	app.formatDistance = function(meters)
 	{

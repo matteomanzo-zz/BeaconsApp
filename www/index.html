@@ -10,8 +10,12 @@
 		<script>
 		if (window.hyper) { console.log = hyper.log; }
 		</script>
+		<script> document.addEventListener("deviceready", onDeviceReady, false); 
+		</script>
 	</head>
 	<body>
+
+		 <p id="deviceProperties">Loading device properties...</p>
 
 		<div id="id-screen-home" class="style-screen">
 			<div class="style-heading-big style-color-purple">Master Finder</div>
@@ -114,6 +118,13 @@
 		<script src="js/screen-monitor-nearables.js"></script>
 		<script src="js/screen-trigger-nearables.js"></script>
 		<script src="js/screen-live-development.js"></script>
+
+
+		<script type="text/javascript" charset="utf-8" src="phonegap.js"></script>
+		<script type="text/javascript" charset="utf-8" src="deviceinformation.js"></script>
+	
+
+
 		<script>
 		// Hide back button if we referrer is empty.
 		var hasReferrer = document.referrer && document.referrer != '';
@@ -186,7 +197,8 @@
       		$('#id-screen-home-button-range-nearables').hide();
       		$('#id-screen-home-button-monitor-nearables').hide();
       		$('#id-screen-home-button-trigger-nearables').hide();
-      	}
+      		app.initialize();
+     }
 		</script>
 
 	</body>

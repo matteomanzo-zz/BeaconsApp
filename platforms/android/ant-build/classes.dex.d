@@ -12,5 +12,7 @@
 /Users/marcinwalendzik/MakersAcademy/week10/1stCordova/estimoteApp/phonegap-estimotebeacons/examples/beacon-finder/platforms/android/ant-build/classes/com/evothings/EstimoteBeacons$PluginMonitoringListener.class \
 /Users/marcinwalendzik/MakersAcademy/week10/1stCordova/estimoteApp/phonegap-estimotebeacons/examples/beacon-finder/platforms/android/ant-build/classes/com/evothings/EstimoteBeacons$PluginRangingListener.class \
 /Users/marcinwalendzik/MakersAcademy/week10/1stCordova/estimoteApp/phonegap-estimotebeacons/examples/beacon-finder/platforms/android/ant-build/classes/com/evothings/EstimoteBeacons.class \
+/Users/marcinwalendzik/MakersAcademy/week10/1stCordova/estimoteApp/phonegap-estimotebeacons/examples/beacon-finder/platforms/android/ant-build/classes/com/vliesaputra/cordova/plugins/DeviceInformation.class \
+/Users/marcinwalendzik/MakersAcademy/week10/1stCordova/estimoteApp/phonegap-estimotebeacons/examples/beacon-finder/platforms/android/ant-build/classes/org/apache/cordova/device/Device.class \
 /Users/marcinwalendzik/MakersAcademy/week10/1stCordova/estimoteApp/phonegap-estimotebeacons/examples/beacon-finder/platforms/android/ant-build/dexedLibs/classes-30256232f07f4ae4bae8fce4d48aa668.jar \
 /Users/marcinwalendzik/MakersAcademy/week10/1stCordova/estimoteApp/phonegap-estimotebeacons/examples/beacon-finder/platforms/android/ant-build/dexedLibs/estimote-sdk-preview-17f3766caadc63edcd4fa8ea033ef1e0.jar \

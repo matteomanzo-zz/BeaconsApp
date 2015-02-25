@@ -32,6 +32,7 @@
 /Users/marcinwalendzik/MakersAcademy/week10/1stCordova/estimoteApp/phonegap-estimotebeacons/examples/beacon-finder/platforms/android/assets/www/cordova.js \
 /Users/marcinwalendzik/MakersAcademy/week10/1stCordova/estimoteApp/phonegap-estimotebeacons/examples/beacon-finder/platforms/android/assets/www/cordova_plugins.js \
 /Users/marcinwalendzik/MakersAcademy/week10/1stCordova/estimoteApp/phonegap-estimotebeacons/examples/beacon-finder/platforms/android/assets/www/css \
+/Users/marcinwalendzik/MakersAcademy/week10/1stCordova/estimoteApp/phonegap-estimotebeacons/examples/beacon-finder/platforms/android/assets/www/deviceinformation.js \
 /Users/marcinwalendzik/MakersAcademy/week10/1stCordova/estimoteApp/phonegap-estimotebeacons/examples/beacon-finder/platforms/android/assets/www/images \
 /Users/marcinwalendzik/MakersAcademy/week10/1stCordova/estimoteApp/phonegap-estimotebeacons/examples/beacon-finder/platforms/android/assets/www/index.html \
 /Users/marcinwalendzik/MakersAcademy/week10/1stCordova/estimoteApp/phonegap-estimotebeacons/examples/beacon-finder/platforms/android/assets/www/js \
@@ -49,7 +50,13 @@
 /Users/marcinwalendzik/MakersAcademy/week10/1stCordova/estimoteApp/phonegap-estimotebeacons/examples/beacon-finder/platforms/android/assets/www/js/screen-trigger-nearables.js \
 /Users/marcinwalendzik/MakersAcademy/week10/1stCordova/estimoteApp/phonegap-estimotebeacons/examples/beacon-finder/platforms/android/assets/www/js/lib/jquery-2.1.1.min.js \
 /Users/marcinwalendzik/MakersAcademy/week10/1stCordova/estimoteApp/phonegap-estimotebeacons/examples/beacon-finder/platforms/android/assets/www/js/lib/touch.js \
+/Users/marcinwalendzik/MakersAcademy/week10/1stCordova/estimoteApp/phonegap-estimotebeacons/examples/beacon-finder/platforms/android/assets/www/plugins/com.vliesaputra.deviceinformation \
+/Users/marcinwalendzik/MakersAcademy/week10/1stCordova/estimoteApp/phonegap-estimotebeacons/examples/beacon-finder/platforms/android/assets/www/plugins/org.apache.cordova.device \
 /Users/marcinwalendzik/MakersAcademy/week10/1stCordova/estimoteApp/phonegap-estimotebeacons/examples/beacon-finder/platforms/android/assets/www/plugins/pl.makingwaves.estimotebeacons \
+/Users/marcinwalendzik/MakersAcademy/week10/1stCordova/estimoteApp/phonegap-estimotebeacons/examples/beacon-finder/platforms/android/assets/www/plugins/com.vliesaputra.deviceinformation/www \
+/Users/marcinwalendzik/MakersAcademy/week10/1stCordova/estimoteApp/phonegap-estimotebeacons/examples/beacon-finder/platforms/android/assets/www/plugins/com.vliesaputra.deviceinformation/www/deviceinformation.js \
+/Users/marcinwalendzik/MakersAcademy/week10/1stCordova/estimoteApp/phonegap-estimotebeacons/examples/beacon-finder/platforms/android/assets/www/plugins/org.apache.cordova.device/www \
+/Users/marcinwalendzik/MakersAcademy/week10/1stCordova/estimoteApp/phonegap-estimotebeacons/examples/beacon-finder/platforms/android/assets/www/plugins/org.apache.cordova.device/www/device.js \
 /Users/marcinwalendzik/MakersAcademy/week10/1stCordova/estimoteApp/phonegap-estimotebeacons/examples/beacon-finder/platforms/android/assets/www/plugins/pl.makingwaves.estimotebeacons/plugin \
 /Users/marcinwalendzik/MakersAcademy/week10/1stCordova/estimoteApp/phonegap-estimotebeacons/examples/beacon-finder/platforms/android/assets/www/plugins/pl.makingwaves.estimotebeacons/plugin/src \
 /Users/marcinwalendzik/MakersAcademy/week10/1stCordova/estimoteApp/phonegap-estimotebeacons/examples/beacon-finder/platforms/android/assets/www/plugins/pl.makingwaves.estimotebeacons/plugin/src/js \
