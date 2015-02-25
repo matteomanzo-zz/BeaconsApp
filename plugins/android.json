@@ -19,6 +19,14 @@
                         {
                             "xml": "<feature name=\"DeviceInformation\"><param name=\"android-package\" value=\"com.vliesaputra.cordova.plugins.DeviceInformation\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"File\"><param name=\"android-package\" value=\"org.apache.cordova.file.FileUtils\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"CordovaHttpPlugin\"><param name=\"android-package\" value=\"com.synconset.CordovaHttpPlugin\" /></feature>",
+                            "count": 1
                         }
                     ]
                 }
@@ -48,6 +56,12 @@
                             "xml": "<service android:exported=\"false\" android:name=\"com.estimote.sdk.service.BeaconService\" />",
                             "count": 1
                         }
+                    ],
+                    "/*": [
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\" />",
+                            "count": 1
+                        }
                     ]
                 }
             }
@@ -62,7 +76,14 @@
         },
         "com.vliesaputra.deviceinformation": {
             "PACKAGE_NAME": "com.evothings.beaconfinder"
+        },
+        "com.synconset.cordovaHTTP": {
+            "PACKAGE_NAME": "com.evothings.beaconfinder"
         }
     },
-    "dependent_plugins": {}
+    "dependent_plugins": {
+        "org.apache.cordova.file": {
+            "PACKAGE_NAME": "com.evothings.beaconfinder"
+        }
+    }
 }

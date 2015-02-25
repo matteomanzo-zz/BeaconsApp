@@ -31,11 +31,15 @@ var app = (function()
 
 
         var deviceInfo = cordova.require("cordova/plugin/DeviceInformation");
-				deviceInfo.get(function(result) {
-        						console.log("result = " + result);}, function() {
-        						console.log("error");
+
+				deviceInfo.get(function(result) {        		
+        						// element.innerHTML += result;
+        						
+        		    		 element.innerHTML += result;
+        		    		 console.log(result);
+
     		});                            
-                   
+   
     }
 
 
